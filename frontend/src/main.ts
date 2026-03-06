@@ -1,0 +1,8 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './style.css';
+
+createRoot(document.getElementById('app') as HTMLElement).render(
+  React.createElement(React.StrictMode, null, React.createElement(App))
+);
